@@ -1,6 +1,6 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -33,15 +33,15 @@ const Header = () => {
               </h1>
             </div>
             <div className="col-4">
-              <div class="input-group">
+              <div className="input-group">
                 <input
                   type="text"
-                  class="form-control py-2"
+                  className="form-control py-2"
                   placeholder="Search Product here"
                   aria-label="Search Product here"
                   aria-describedby="basic-addon2"
                 />
-                <span class="input-group-text " id="basic-addon2">
+                <span className="input-group-text " id="basic-addon2">
                   <BsSearch className="fs-6" />
                 </span>
               </div>
@@ -51,7 +51,7 @@ const Header = () => {
                 <div>
                   <Link className="d-flex align-items-center gap-10 text-white">
                     <img src="/images/compare.svg" alt="wishlist" />
-                    <p>
+                    <p className="mb-0">
                       Compare <br /> Product
                     </p>
                   </Link>
@@ -59,7 +59,7 @@ const Header = () => {
                 <div>
                   <Link className="d-flex align-items-center gap-10 text-white">
                     <img src="/images/wishlist.svg" alt="wishlist" />
-                    <p>
+                    <p className="mb-0">
                       Favourite <br /> Wishlist
                     </p>
                   </Link>
@@ -67,7 +67,7 @@ const Header = () => {
                 <div>
                   <Link className="d-flex align-items-center gap-10 text-white">
                     <img src="/images/user.svg" alt="user" />
-                    <p>
+                    <p className="mb-0">
                       Log in <br /> My Account
                     </p>
                   </Link>
@@ -77,9 +77,57 @@ const Header = () => {
                     <img src="/images/cart.svg" alt="cart" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
-                      <p>$ 500</p>
+                      <p className="mb-0">$ 500</p>
                     </div>
                   </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <header className="header-bottom py-3">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="menu-bottom d-flex align-items-center gap-30">
+                <div>
+                  <div className="dropdown">
+                    <button
+                      className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center "
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="/images/menu.svg" alt="menu" />
+                      <span className="me-5 d-inline-block">
+                        Shop Categories
+                      </span>
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <Link className="dropdown-item text-white">Action</Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item text-white">
+                          Another action
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item text-white">
+                          Something else here
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="menu-links">
+                  <div className="d-flex align-items-center gap-15">
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/">Our Store</NavLink>
+                    <NavLink to="/">Blogs</NavLink>
+                    <NavLink to="/">Contact</NavLink>
+                  </div>
                 </div>
               </div>
             </div>
