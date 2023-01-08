@@ -25,14 +25,14 @@ const Header = () => {
         </div>
       </header>
       <header className="header-upper py-3">
-        <div className="container-xl">
+        <div className="container">
           <div className="row align-items-center">
             <div className="col-2">
               <h1>
                 <Link className="text-white">PandaE</Link>
               </h1>
             </div>
-            <div className="col-5">
+            <div className="col-4">
               <div class="input-group">
                 <input
                   type="text"
@@ -41,53 +41,44 @@ const Header = () => {
                   aria-label="Search Product here"
                   aria-describedby="basic-addon2"
                 />
-                <span class="input-group-text p-3" id="basic-addon2">
+                <span class="input-group-text " id="basic-addon2">
                   <BsSearch className="fs-6" />
                 </span>
               </div>
             </div>
-            <div className="col-5">
+            <div className="col-6">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
-                  <img src="/images/compare.svg" alt="" />
-                  <Link>
-                    <p></p>
+                  <Link className="d-flex align-items-center gap-10 text-white">
+                    <img src="/images/compare.svg" alt="wishlist" />
+                    <p>
+                      Compare <br /> Product
+                    </p>
                   </Link>
                 </div>
                 <div>
-                  <img src="" alt="" />
-                  <Link>
-                    <p></p>
+                  <Link className="d-flex align-items-center gap-10 text-white">
+                    <img src="/images/wishlist.svg" alt="wishlist" />
+                    <p>
+                      Favourite <br /> Wishlist
+                    </p>
                   </Link>
                 </div>
                 <div>
-                  <img src="" alt="" />
-                  <Link>
-                    <p></p>
+                  <Link className="d-flex align-items-center gap-10 text-white">
+                    <img src="/images/user.svg" alt="user" />
+                    <p>
+                      Log in <br /> My Account
+                    </p>
                   </Link>
                 </div>
                 <div>
-                  <img src="" alt="" />
-                  <Link>
-                    <p></p>
-                  </Link>
-                </div>
-                <div>
-                  <img src="" alt="" />
-                  <Link>
-                    <p></p>
-                  </Link>
-                </div>
-                <div>
-                  <img src="" alt="" />
-                  <Link>
-                    <p></p>
-                  </Link>
-                </div>
-                <div>
-                  <img src="" alt="" />
-                  <Link>
-                    <p></p>
+                  <Link className="d-flex align-items-center gap-10 text-white">
+                    <img src="/images/cart.svg" alt="cart" />
+                    <div className="d-flex flex-column gap-10">
+                      <span className="badge bg-white text-dark">0</span>
+                      <p>$ 500</p>
+                    </div>
                   </Link>
                 </div>
               </div>

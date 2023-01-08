@@ -20,6 +20,13 @@ a {
   border-color: inherit;
 }
 
+.gap-10 {
+  gap: 10px;
+}
+.gap-15 {
+  gap: 15px;
+}
+
 /* header part start*/
 
 .header-top-strip {
@@ -31,5 +38,9 @@ a {
 }
 .header-upper .input-group-text {
   background-color: var(--color-febd69);
+}
+.header-upper .header-upper-links img {
+  width: 31px;
+  height: 31px;
 }
 /* header part end*/
