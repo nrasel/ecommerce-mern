@@ -253,7 +253,7 @@ footer:not(:first-child) {
   overflow: hidden;
 }
 .product-card .product-image {
-  height: 270px;
+  height: 200px;
 }
 .product-card .product-image img {
   object-fit: contain;
@@ -272,7 +272,9 @@ footer:not(:first-child) {
   display: block;
   transition: 0.3s;
 }
-
+.low-padd {
+  padding-right: 0px !important;
+}
 .product-card:hover .action-bar {
   right: 15px;
 }
@@ -298,3 +300,10 @@ footer:not(:first-child) {
   top: 2%;
   right: 15px;
 }
+/* special productd start */
+.special-product-card {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+/* special productd end */
