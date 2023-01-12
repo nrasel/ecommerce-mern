@@ -1,5 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
@@ -8,6 +9,9 @@ import SpecialProducts from "../components/SpecialProducts";
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
       <section className="home-wrapper-1 py-5">
         <div className="container">
           <div className="row">
@@ -333,6 +337,7 @@ const Home = () => {
             </div>
           </div>
           <div className="row">
+            <SpecialProducts />
             <SpecialProducts />
             <SpecialProducts />
             <SpecialProducts />
