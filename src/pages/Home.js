@@ -7,7 +7,7 @@ import SpecialProducts from "../components/SpecialProducts";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <section className="home-wrapper-1 py-5">
         <div className="container">
           <div className="row">
@@ -255,11 +255,76 @@ const Home = () => {
             <ProductCard />
             <ProductCard />
             <ProductCard />
-            <ProductCard />
-            <ProductCard />
           </div>
         </div>
       </section>
+      <secion className="famous-wrapper  py-5 home-wrapper-2">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 mt-4">
+              <h3 className="section-heading">Famous Products</h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card  rounded position-relative bg-dark">
+                <img
+                  className="img-fluid  bg-dark rounded"
+                  src="/images/watch-2.png"
+                  alt=""
+                />
+                <div className="famous-content position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>From $999 $16.62/mo. for 24mo</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card  shadow rounded position-relative ">
+                <img
+                  className="img-fluid  rounded"
+                  src="/images/watch-2.png"
+                  alt=""
+                />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Big Screen</h5>
+                  <h6 className="text-dark">Smart Watch Series 7</h6>
+                  <p className="text-dark">From $999 $16.62/mo. for 24mo</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card  shadow rounded position-relative ">
+                <img
+                  className="img-fluid  rounded"
+                  src="/images/watch-2.png"
+                  alt=""
+                />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Big Screen</h5>
+                  <h6 className="text-dark">Smart Watch Series 7</h6>
+                  <p className="text-dark">From $999 $16.62/mo. for 24mo</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card mb-5 shadow rounded position-relative ">
+                <img
+                  className="img-fluid  rounded"
+                  src="/images/watch-2.png"
+                  alt=""
+                />
+                <div className="famous-content position-absolute">
+                  <h5 className="text-dark">Big Screen</h5>
+                  <h6 className="text-dark">Smart Watch Series 7</h6>
+                  <p className="text-dark">From $999 $16.62/mo. for 24mo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </secion>
       <section className="special-wrapper py-5 home-wrapper-2">
         <div className="container">
           <div className="row">
@@ -271,6 +336,21 @@ const Home = () => {
             <SpecialProducts />
             <SpecialProducts />
             <SpecialProducts />
+          </div>
+        </div>
+      </section>
+      <section className="popular-product-wrapper py-5 home-wrapper-2">
+        <div className="container">
+          <div className="row ">
+            <div className="col-12">
+              <h3 className="section-heading">Our Popular Products</h3>
+            </div>
+            <div className="row">
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+            </div>
           </div>
         </div>
       </section>
@@ -287,7 +367,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

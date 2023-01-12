@@ -28,9 +28,9 @@ const SpecialProducts = () => {
                 <b>5 days</b>
               </p>
               <div className="d-flex gap-10 align-items-center">
-                <span className="badge rounded-circle p-2 bg-warning">1</span>:
-                <span className="badge rounded-circle p-2 bg-warning">1</span>:
-                <span className="badge rounded-circle p-2 bg-warning">1</span>
+                <span className="badge rounded-circle p-2 bg-danger">1</span>:
+                <span className="badge rounded-circle p-2 bg-danger">1</span>:
+                <span className="badge rounded-circle p-2 bg-danger">1</span>
               </div>
             </div>
             <div className="product-count my-3">
