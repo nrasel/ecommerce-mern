@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
 
 const OurStore = () => {
@@ -111,9 +112,71 @@ const OurStore = () => {
               </div>
               <div className="filter-card mb-3">
                 <h3 className="filter-title">Product Tags</h3>
+                <div>
+                  <div className="product-tags d-flex flex-wrap align-items-center gap-10">
+                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
+                      Headphone
+                    </span>
+                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
+                      Laptop
+                    </span>
+                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
+                      Mobile
+                    </span>
+                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
+                      Wire
+                    </span>
+                  </div>
+                </div>
               </div>
               <div className="filter-card mb-3">
                 <h3 className="filter-title">Random Product</h3>
+                <div>
+                  <div className="random-products mb-3 d-flex">
+                    <div className="w-50">
+                      <img
+                        src="/images/watch.jpg"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div className="w-50">
+                      <h5>
+                        Kids headphones bulk 10 pxck multi colored for students
+                      </h5>
+                      <ReactStars
+                        activeColor="#ffd700"
+                        count={5}
+                        size={24}
+                        value={4}
+                        edit={false}
+                      />
+                      <p>$ 300</p>
+                    </div>
+                  </div>
+                  <div className="random-products d-flex">
+                    <div className="w-50">
+                      <img
+                        src="/images/watch.jpg"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div className="w-50">
+                      <h5>
+                        Kids headphones bulk 10 pxck multi colored for students
+                      </h5>
+                      <ReactStars
+                        activeColor="#ffd700"
+                        count={5}
+                        size={24}
+                        value={4}
+                        edit={false}
+                      />
+                      <p>$ 300</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-9"></div>
