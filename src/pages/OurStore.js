@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
+import ProductCard from "../components/ProductCard";
 
 const OurStore = () => {
+  const [grid, setGrid] = useState(4);
+  const gridSetter = (i) => {
+    setGrid(i);
+  };
+
   return (
     <div>
       <Helmet>
@@ -48,23 +54,23 @@ const OurStore = () => {
 
                   <h5 className="sub-title">Price</h5>
                   <div className="d-flex align-items-center gap-10">
-                    <div class="form-floating">
+                    <div className="form-floating">
                       <input
                         type="email"
-                        class="form-control"
+                        className="form-control"
                         id="floatingInput"
                         placeholder="From"
                       />
-                      <label for="floatingInput">From</label>
+                      <label htmlFor="floatingInput">From</label>
                     </div>
-                    <div class="form-floating">
+                    <div className="form-floating">
                       <input
                         type="email"
-                        class="form-control"
+                        className="form-control"
                         id="floatingInput1"
                         placeholder="To"
                       />
-                      <label for="floatingInput1">To</label>
+                      <label htmlFor="floatingInput1">To</label>
                     </div>
                   </div>
                   <h5 className="sub-title">Colors</h5>
@@ -215,28 +221,37 @@ const OurStore = () => {
                     <p className="totalproducts mb-0">21 Products</p>
                     <div className="d-flex gap-10 align-items-center grid">
                       <img
+                        onClick={() => gridSetter(3)}
                         src="images/gr4.svg"
                         className="d-block img-fluid"
                         alt="grid"
                       />
                       <img
+                        onClick={() => gridSetter(4)}
                         src="images/gr3.svg"
                         className="d-block img-fluid"
                         alt="grid"
                       />
                       <img
+                        onClick={() => gridSetter(6)}
                         src="images/gr2.svg"
                         className="d-block img-fluid"
                         alt="grid"
                       />
 
                       <img
+                        onClick={() => gridSetter(12)}
                         src="images/gr.svg"
                         className="d-block img-fluid"
                         alt="grid"
                       />
                     </div>
                   </div>
+                </div>
+              </div>
+              <div className="products-list pb-5">
+                <div className="d-flex flex-wrap gap-10">
+                  <ProductCard grid={grid} />
                 </div>
               </div>
             </div>
