@@ -516,3 +516,39 @@ footer:not(:first-child) {
 /* wishlist start  */
 
 /* wishlist end  */
+
+/* login page start */
+.auth-card {
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+.auth-card h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-777777);
+}
+.auth-card .form-control {
+  background-color: var(--color-f5f5f7);
+  height: 50px;
+  color: var(--color-777777);
+  border-radius: 10px;
+  border-color: transparent;
+  font-size: 14px;
+}
+.auth-card a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1c1c1b;
+}
+.auth-card .signup {
+  background-color: var(--color-febd69);
+  color: #131921;
+}
+.auth-card .signup:hover {
+  background-color: var(--color-131921);
+  color: white;
+}
+/* login page end */
