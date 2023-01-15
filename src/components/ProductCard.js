@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const ProductCard = ({ grid }) => {
   let location = useLocation();
-
+  console.log(grid);
   return (
     <>
       <div
@@ -34,6 +34,10 @@ const ProductCard = ({ grid }) => {
               size={24}
               activeColor="#ffd700"
             />
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+              Product details of High quality Wifi Router Stand Shelf Double
+              Layer Wall Mounted Shelf Storage Rack Home decorator
+            </p>
             <p className="price">$100.00</p>
           </div>
           <div className="action-bar position-absolute">
@@ -79,6 +83,10 @@ const ProductCard = ({ grid }) => {
               size={24}
               activeColor="#ffd700"
             />
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+              Product details of High quality Wifi Router Stand Shelf Double
+              Layer Wall Mounted Shelf Storage Rack Home decorator
+            </p>
             <p className="price">$100.00</p>
           </div>
           <div className="action-bar position-absolute">
