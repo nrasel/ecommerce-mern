@@ -37,8 +37,12 @@ const Login = () => {
                     <div className="mt-3">
                       <Link to="/forgot-password">Forgot Password?</Link>
                       <div className="d-flex mt-3 justify-content-center ">
-                        <button className="button border-0">Login</button>
-                        <Link className="button signup ms-3">SignUp</Link>
+                        <button type="submit" className="button border-0">
+                          Login
+                        </button>
+                        <Link to="/sign-up" className="button signup ms-3">
+                          SignUp
+                        </Link>
                       </div>
                     </div>
                   </div>
