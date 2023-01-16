@@ -61,7 +61,29 @@ const SingleProduct = () => {
                 </div>
               </div>
             </div>
-            <div className="col-6"></div>
+            <div className="col-6">
+              <div className="main-product-details">
+                <div className="border-bottom">
+                  <h3 className="title">
+                    Kids Headphones Bulk 10 Pack Multi Colored For Students
+                  </h3>
+                </div>
+                <div className="border-bottom py-3">
+                  <p className="price">$ 100</p>
+                  <div className="d-flex align-items-center gap-10">
+                    <ReactStars
+                      count={5}
+                      value={3}
+                      edit={false}
+                      size={24}
+                      activeColor="#ffd700"
+                    />
+                    <p className="mb-0">(2 Reviews)</p>
+                  </div>
+                </div>
+                <a href="#review">Write a Review</a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -85,7 +107,7 @@ const SingleProduct = () => {
         <section className="reviews-wrapper pb-5 home-wrapper-2 ">
           <div className="container">
             <div className="col-12">
-              <h4>Reviews</h4>
+              <h4 id="review">Reviews</h4>
               <div className="review-inner-wrapper rounded">
                 <div className="review-head d-flex justify-content-between align-items-end">
                   <div>
