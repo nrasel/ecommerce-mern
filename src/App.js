@@ -10,6 +10,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import OurStore from "./pages/OurStore";
+import ResetPassword from "./pages/ResetPassword";
 import SignUp from "./pages/SignUp";
 import Wishlist from "./pages/Wishlist";
 
@@ -30,6 +31,7 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="forgot-password" element={<ForgotPassword />} />
             <Route path="sign-up" element={<SignUp />} />
+            <Route path="reset" element={<ResetPassword />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -23,7 +23,7 @@ const ForgotPassword = () => {
                   <div>
                     <div>
                       <input
-                        type="password"
+                        type="text"
                         placeholder="Email"
                         name="email"
                         className="form-control"

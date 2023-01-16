@@ -28,7 +28,7 @@ const Login = () => {
                     </div>
                     <div className="mt-2">
                       <input
-                        type="text"
+                        type="password"
                         name="password"
                         placeholder="Password"
                         className="form-control"
@@ -37,12 +37,12 @@ const Login = () => {
                     <div className="mt-3">
                       <Link to="/forgot-password">Forgot Password?</Link>
                       <div className="d-flex mt-3 justify-content-center ">
-                        <button type="submit" className="button border-0">
-                          Login
-                        </button>
-                        <Link to="/sign-up" className="button signup ms-3">
+                        <Link to="/sign-up" className="button signup ">
                           SignUp
                         </Link>
+                        <button type="submit" className="button border-0 ms-3">
+                          Login
+                        </button>
                       </div>
                     </div>
                   </div>

@@ -15,7 +15,7 @@ const SignUp = () => {
           <div className="row">
             <div className="col-12">
               <div className="auth-card">
-                <h3 className="text-center">Login</h3>
+                <h3 className="text-center">Sign Up</h3>
                 <form className="d-flex flex-column gap-15" action="">
                   <div>
                     <div>
@@ -52,10 +52,16 @@ const SignUp = () => {
                     </div>
                     <div className="mt-3">
                       <div className="d-flex mt-3 justify-content-center ">
-                        <button type="submit" className="button border-0">
+                        <Link
+                          to="/login"
+                          type="submit"
+                          className="button signup"
+                        >
                           Login
+                        </Link>
+                        <button type="submit" className="button border-0 ms-3">
+                          SignUp
                         </button>
-                        <Link className="button signup ms-3">SignUp</Link>
                       </div>
                     </div>
                   </div>
