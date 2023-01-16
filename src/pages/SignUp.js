@@ -28,7 +28,23 @@ const SignUp = () => {
                     </div>
                     <div className="mt-2">
                       <input
-                        type="text"
+                        type="email"
+                        placeholder="Email"
+                        name="email"
+                        className="form-control"
+                      />
+                    </div>
+                    <div className="mt-2">
+                      <input
+                        type="tel"
+                        placeholder="Mobile Number"
+                        name="moile"
+                        className="form-control"
+                      />
+                    </div>
+                    <div className="mt-2">
+                      <input
+                        type="password"
                         name="password"
                         placeholder="Password"
                         className="form-control"
