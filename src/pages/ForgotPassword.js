@@ -11,7 +11,7 @@ const ForgotPassword = () => {
       </Helmet>
       <BreadCrumb title="forgot password" />
       <div className="login-wrapper home-wrapper-2 py-5">
-        <div className="">
+        <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="auth-card">
