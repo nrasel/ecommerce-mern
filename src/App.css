@@ -579,6 +579,12 @@ footer:not(:first-child) {
 /* policy pages end */
 
 /* main product page start */
+
+.description-wrapper h4,
+.reviews-wrapper h4 {
+  font-size: 25px;
+  color: var(--color-1c1c1b);
+}
 .review-inner-wrapper {
   background-color: white;
   padding: 30px;
@@ -612,5 +618,32 @@ footer:not(:first-child) {
 }
 .review:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-product-image {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.main-product-image > div {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.main-product-image img {
+  width: 100% !important;
+  height: 250px !important;
+  object-fit: cover;
+}
+.other-product-images {
+  background-color: white;
+  padding: 20px;
+}
+.other-product-images > div {
+  padding: 20px;
+  width: 48%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+.other-product-images img {
+  border-radius: 4px;
 }
 /* main product page end */

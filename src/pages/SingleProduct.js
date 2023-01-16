@@ -1,11 +1,20 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
+import ReactImageZoom from "react-image-zoom";
 import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
 import ProductCard from "../components/ProductCard";
 
 const SingleProduct = () => {
   const [orderedProduct, setOrderedProduct] = useState(true);
+  const props = {
+    width: 400,
+    height: 250,
+    zoomWidth: 500,
+    offset: 1,
+    img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
+  };
+
   return (
     <div>
       <Helmet>
@@ -14,13 +23,48 @@ const SingleProduct = () => {
       <BreadCrumb title="Single product" />
       <div className="main-product-wrapper py-5 home-wrapper-2">
         <div className="container">
-          <div className="container">
-            <div className="row">
-              <div className="col-6"></div>
-              <div className="col-6"></div>
+          <div className="row">
+            <div className="col-6">
+              <div className="main-product-image">
+                <div>
+                  <ReactImageZoom {...props} />
+                </div>
+              </div>
+              <div className="other-product-images d-flex flex-wrap gap-15">
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
+            <div className="col-6"></div>
           </div>
         </div>
+
         <div className="description-wrapper py-5 home-wrapper-2">
           <div className="container">
             <div className="row">
@@ -38,10 +82,11 @@ const SingleProduct = () => {
             </div>
           </div>
         </div>
-        <section className="reviews wrapper py-5 home-wrapper-2">
+        <section className="reviews-wrapper pb-5 home-wrapper-2 ">
           <div className="container">
             <div className="col-12">
-              <div className="review-inner-wrapper">
+              <h4>Reviews</h4>
+              <div className="review-inner-wrapper rounded">
                 <div className="review-head d-flex justify-content-between align-items-end">
                   <div>
                     <h4 className="mb-2">Customer Reviews</h4>
