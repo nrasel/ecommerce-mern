@@ -570,3 +570,47 @@ footer:not(:first-child) {
   color: var(--color-777777);
 }
 /* login page end */
+
+/* policy pages start */
+.policy {
+  padding: 30px;
+  background-color: white;
+}
+/* policy pages end */
+
+/* main product page start */
+.review-inner-wrapper {
+  background-color: white;
+  padding: 30px;
+}
+.review-head {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+.review-head h4 {
+  font-size: 18px;
+  color: var(--color-1c1c1b);
+}
+.review-head a,
+.review-head p {
+  font-size: 14px;
+  color: var(--color-777777);
+}
+.form-control:focus {
+  border-color: #dee2e6 !important;
+}
+.review-form h4 {
+  color: var(--color-777777);
+  font-size: 16px;
+}
+.review-form {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.reviews p {
+  font-size: 14px;
+  color: var(--color-777777);
+}
+.review:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* main product page end */

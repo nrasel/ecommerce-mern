@@ -4,15 +4,15 @@ import { Link, useLocation } from "react-router-dom";
 
 const ProductCard = ({ grid }) => {
   let location = useLocation();
-  console.log(grid);
+  
   return (
     <>
       <div
         className={`${
-          location.pathname === "/our-store" ? `gr-${grid}` : "col-3"
+          location.pathname === "/product" ? `gr-${grid}` : "col-3"
         }`}
       >
-        <Link className="product-card position-relative">
+        <Link to="/product/:id" className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="/images/wish.svg" alt="" />
@@ -58,10 +58,10 @@ const ProductCard = ({ grid }) => {
 
       <div
         className={`${
-          location.pathname === "/our-store" ? `gr-${grid}` : "col-3"
+          location.pathname === "/product" ? `gr-${grid}` : "col-3"
         }`}
       >
-        <Link className="product-card position-relative">
+        <Link to="/product/:id" className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="/images/wish.svg" alt="" />
