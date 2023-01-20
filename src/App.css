@@ -48,7 +48,7 @@ a {
 .button {
   background-color: var(--color-232f3e);
   color: white;
-  padding: 8px 26px;
+  padding: 8px 23px;
   border-radius: 25px;
 }
 .button:hover {
@@ -682,3 +682,33 @@ footer:not(:first-child) {
 }
 
 /* main product page end */
+/* cart page start */
+.cart-header,
+.cart-data {
+  border-bottom: 1px solid #eaeaea;
+}
+.cart-header h4 {
+  font-size: 13px;
+  color: var(--color-777777);
+}
+.cart-col-1 {
+  width: 40%;
+}
+.cart-col-1 p {
+  color: var(--color-777777);
+  font-size: 14px;
+}
+.cart-col-2 {
+  width: 10%;
+}
+.cart-col-3 {
+  width: 15%;
+}
+.cart-col-4 {
+  width: 15%;
+}
+.cart-data h5.price{
+  font-size: 14px;
+  color: var(--color-1c1c1b);
+}
+/* cart page end */
