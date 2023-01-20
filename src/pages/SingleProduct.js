@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
+import { AiOutlineHeart } from "react-icons/ai";
+import { TbGitCompare } from "react-icons/tb";
 import ReactImageZoom from "react-image-zoom";
 import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
@@ -14,6 +16,15 @@ const SingleProduct = () => {
     zoomWidth: 500,
     offset: 1,
     img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
+  };
+  const copyToClipboard = (text) => {
+    console.log("text", text);
+    let textField = document.createElement("textarea");
+    textField.innerText = text;
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand("copy");
+    textField.remove();
   };
 
   return (
@@ -84,19 +95,19 @@ const SingleProduct = () => {
                   <a href="#review">Write a Review</a>
                 </div>
                 <div className="border-bottom py-3">
-                  <div className="d-flex mb-2 gap-10 align-items-center">
+                  <div className="d-flex my-2 gap-10 align-items-center">
                     <h3 className="product-heading">Type :</h3>
                     <p className="product-data mb-0">Watch</p>
                   </div>
-                  <div className="d-flex mb-2 gap-10 align-items-center">
+                  <div className="d-flex my-2 gap-10 align-items-center">
                     <h3 className="product-heading">Brand :</h3>
                     <p className="product-data mb-0">Havels</p>
                   </div>
-                  <div className="d-flex mb-2 gap-10 align-items-center">
+                  <div className="d-flex my-2 gap-10 align-items-center">
                     <h3 className="product-heading">Cateogry :</h3>
                     <p className="product-data mb-0">Watch</p>
                   </div>
-                  <div className="d-flex mb-2 gap-10 align-items-center">
+                  <div className="d-flex my-2 gap-10 align-items-center">
                     <h3 className="product-heading">Tags :</h3>
                     <p className="product-data mb-0">Watch</p>
                   </div>
@@ -125,7 +136,7 @@ const SingleProduct = () => {
                     <h3 className="product-heading">Color :</h3>
                     <Color />
                   </div>
-                  <div className="d-flex gap-10 flex-row  align-items-center mb-3">
+                  <div className="d-flex gap-15 flex-row  align-items-center mb-3">
                     <h3 className="product-heading">Quantity :</h3>
                     <div className="">
                       <input
@@ -143,6 +154,40 @@ const SingleProduct = () => {
                         Buy It Now
                       </button>
                     </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-15">
+                    <div>
+                      <a href="">
+                        <TbGitCompare className="fs-5 me-2" />
+                        Add tp card
+                      </a>
+                    </div>
+                    <div>
+                      <a href="">
+                        <AiOutlineHeart className="fs-5 me-2" />
+                        Add to Wishlist
+                      </a>
+                    </div>
+                  </div>
+                  <div className="d-flex my-2 gap-10 align-items-center">
+                    <h3 className="product-heading">Shipping & Return : </h3>
+                    <p className="product-data mb-0">
+                      Free shipping and returns available on all orders! <br />
+                      <b>5-10 business days!</b>
+                    </p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Product Link:</h3>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={() => {
+                        copyToClipboard(
+                          "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                        );
+                      }}
+                    >
+                      Copy Product Link
+                    </a>
                   </div>
                 </div>
               </div>

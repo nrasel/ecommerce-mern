@@ -676,4 +676,9 @@ footer:not(:first-child) {
   color: var(--color-1c1c1b);
   margin-bottom: 0;
 }
+.main-product-details a {
+  font-size: 14px;
+  color: var(--color-777777);
+}
+
 /* main product page end */
