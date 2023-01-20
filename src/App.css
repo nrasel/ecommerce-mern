@@ -667,4 +667,13 @@ footer:not(:first-child) {
   margin-bottom: 10px;
 }
 
+.product-data {
+  font-size: 13px;
+  color: var(--color-1c1c1b);
+}
+.product-heading {
+  font-size: 14px;
+  color: var(--color-1c1c1b);
+  margin-bottom: 0;
+}
 /* main product page end */
