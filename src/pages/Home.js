@@ -98,7 +98,6 @@ const Home = () => {
           </div>
         </div>
       </Container>
-
       <Container class1="home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
@@ -116,7 +115,6 @@ const Home = () => {
           </div>
         </div>
       </Container>
-
       <Container class1="wrapper-3 py-5">
         <div className="row">
           <div className="col-12">
@@ -183,7 +181,6 @@ const Home = () => {
         </div>
       </Container>
       <Container class1="section marque-wrapper home-wrapper-2  mt-4 py-5">
-        {" "}
         <div className="row">
           <div className="col-12">
             <div className="marquee-inner-wrapper card-wrapper">
@@ -220,7 +217,6 @@ const Home = () => {
           </div>
         </div>
       </Container>
-
       <Container class1="featured-wrapper py-5 home-wrapper-2">
         <div className="row ">
           <div className="col-12">
@@ -311,7 +307,6 @@ const Home = () => {
         </div>
       </Container>
       <Container class1="popular-product-wrapper py-5 home-wrapper-2">
-        {" "}
         <div className="row ">
           <div className="col-12">
             <h3 className="section-heading">Our Popular Products</h3>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import BreadCrumb from "../components/BreadCrumb";
+import Container from "../components/Container";
 
 const RefundPolicy = () => {
   return (
@@ -9,15 +10,13 @@ const RefundPolicy = () => {
         <title>Refunds Policy</title>
       </Helmet>
       <BreadCrumb title="Refunds Policy" />
-      <section className="policy-wrapper py-5 home-wrapper-2">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="policy"></div>
-            </div>
+      <Container class1="policy-wrapper py-5 home-wrapper-2">
+        <div className="row">
+          <div className="col-12">
+            <div className="policy"></div>
           </div>
         </div>
-      </section>
+      </Container>
     </div>
   );
 };
