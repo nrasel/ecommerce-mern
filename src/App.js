@@ -4,6 +4,8 @@ import "./App.css";
 import Layout from "./components/Layout";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 import CompareProduct from "./pages/CompareProduct";
 import Contact from "./pages/Contact";
 import ForgotPassword from "./pages/ForgotPassword";
@@ -19,7 +21,6 @@ import SingleBlog from "./pages/SingleBlog";
 import SingleProduct from "./pages/SingleProduct";
 import TermsAndConditon from "./pages/TermsAndConditon";
 import Wishlist from "./pages/Wishlist";
-import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="product" element={<OurStore />} />
             <Route path="cart" element={<Cart />} />
+            <Route path="checkout" element={<Checkout />} />
             <Route path="product/:id" element={<SingleProduct />} />
             <Route path="blogs" element={<Blog />} />
             <Route path="blog/:id" element={<SingleBlog />} />
