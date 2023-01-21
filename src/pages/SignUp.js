@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import BreadCrumb from "../components/BreadCrumb";
 import Container from "../components/Container";
+import CustomInput from "../components/CustomInput";
 
 const SignUp = () => {
   return (
@@ -17,39 +18,19 @@ const SignUp = () => {
             <div className="auth-card">
               <h3 className="text-center">Sign Up</h3>
               <form className="d-flex flex-column gap-15" action="">
+                <CustomInput type="text" name="name" placeholder="Name" />
+                <CustomInput type="email" placeholder="Email" name="email" />
+                <CustomInput
+                  type="tel"
+                  placeholder="Mobile Number"
+                  name="moile"
+                />
+                <CustomInput
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                />
                 <div>
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Name"
-                      name="name"
-                      className="form-control"
-                    />
-                  </div>
-                  <div className="mt-2">
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      name="email"
-                      className="form-control"
-                    />
-                  </div>
-                  <div className="mt-2">
-                    <input
-                      type="tel"
-                      placeholder="Mobile Number"
-                      name="moile"
-                      className="form-control"
-                    />
-                  </div>
-                  <div className="mt-2">
-                    <input
-                      type="password"
-                      name="password"
-                      placeholder="Password"
-                      className="form-control"
-                    />
-                  </div>
                   <div className="mt-3">
                     <div className="d-flex mt-3 justify-content-center ">
                       <Link to="/login" type="submit" className="button signup">

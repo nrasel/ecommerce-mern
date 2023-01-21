@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import BreadCrumb from "../components/BreadCrumb";
 import Container from "../components/Container";
+import CustomInput from "../components/CustomInput";
 
 const ForgotPassword = () => {
   return (
@@ -20,18 +21,12 @@ const ForgotPassword = () => {
               <p className="text-center my-2">
                 We will send you an email to reset your password
               </p>
-              <form className="d-flex flex-column gap-15" action="">
+              <form className="d-flex flex-column gap-15 mt-3"  action="">
+                <CustomInput type="text" placeholder="Email" name="email" />
                 <div>
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Email"
-                      name="email"
-                      className="form-control"
-                    />
-                  </div>
-                  <div className="mt-3">
-                    <div className="d-flex mt-3 justify-content-center gap-15 align-items-center flex-column">
+                 
+                  <div className="mt-1">
+                    <div className="d-flex mt-2 justify-content-center gap-15 align-items-center flex-column">
                       <button type="submit" className="button border-0">
                         Submit
                       </button>

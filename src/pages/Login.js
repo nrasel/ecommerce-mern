@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import BreadCrumb from "../components/BreadCrumb";
 import Container from "../components/Container";
+import CustomInput from "../components/CustomInput";
 
 const Login = () => {
   return (
@@ -17,24 +18,14 @@ const Login = () => {
             <div className="auth-card">
               <h3 className="text-center">Login</h3>
               <form className="d-flex flex-column gap-15" action="">
+                <CustomInput type="email" placeholder="Email" name="email" />
+                <CustomInput
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                />
                 <div>
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      name="email"
-                      className="form-control"
-                    />
-                  </div>
-                  <div className="mt-2">
-                    <input
-                      type="password"
-                      name="password"
-                      placeholder="Password"
-                      className="form-control"
-                    />
-                  </div>
-                  <div className="mt-3">
+                  <div className="mt-1">
                     <Link to="/forgot-password">Forgot Password?</Link>
                     <div className="d-flex mt-3 justify-content-center ">
                       <Link to="/sign-up" className="button signup ">
