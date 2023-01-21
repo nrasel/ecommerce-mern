@@ -707,8 +707,19 @@ footer:not(:first-child) {
 .cart-col-4 {
   width: 15%;
 }
-.cart-data h5.price{
+.cart-data h5.price {
   font-size: 14px;
   color: var(--color-1c1c1b);
 }
 /* cart page end */
+
+/* shipping page start */
+.total {
+  font-size: 14px;
+  color: var(--color-1c1c1b);
+}
+.total-price {
+  font-size: 16px;
+  color: var(--color-777777);
+}
+/* shipping page end */
